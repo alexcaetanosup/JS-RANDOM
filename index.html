@@ -7,13 +7,28 @@
     <title>Random</title>
   </head>
   <body>
-    <img src="./img/dev-sorteio.png" alt="logo-do-sorteio" />
-    <h2>Sortear um número</h2>
-    <div>
-      <input type="number" class="input-min" placeholder="entre" />
-      <input type="number" class="input-max" placeholder="entre" />
-    </div>
-    <button onclick="generateNumber()">Sorteas</button>
+    <main>
+      <img src="./img/dado.png" alt="logo-do-sorteio" />
+
+      <h2>Sortear um número</h2>
+      <div>
+        <input
+          type="number"
+          class="input-min"
+          placeholder="Entre com o 1º número"
+        />
+        <input
+          type="number"
+          class="input-max"
+          placeholder="Entre com o 2º número"
+        />
+      </div>
+      <button onclick="generateNumber()">Sortear</button>
+      <div>
+        <p>O resultado é: <span id="resultSorteio"></span></p>
+      </div>
+    </main>
   </body>
+
   <script src="./script.js"></script>
 </html>
